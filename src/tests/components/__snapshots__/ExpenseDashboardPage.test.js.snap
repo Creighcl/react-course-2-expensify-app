@@ -3,6 +3,7 @@
 exports[`ExpenseDashboardPage should render to snapshot 1`] = `
 <div>
   <Connect(ExpenseListFilters) />
+  <Connect(ExpensesSummary) />
   <Connect(ExpenseList) />
 </div>
 `;
