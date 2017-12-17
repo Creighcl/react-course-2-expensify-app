@@ -14,7 +14,7 @@ const mapStateToProps = (state) => {
     const currentExpenses = selectExpenses(state.expenses, state.filters);
     const expenseTotal = numeral(expensesTotal(currentExpenses)/100).format('$0,0.00');
     return {
-        expensesCount: currentExpenses.length,
+        expensesCount: currentExpenses.lengthu,
         expenseTotal
     };
 };
