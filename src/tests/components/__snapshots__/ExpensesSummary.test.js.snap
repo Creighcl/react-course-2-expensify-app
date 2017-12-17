@@ -3,8 +3,8 @@
 exports[`should match snapshot for std filters, 1 expense 1`] = `
 <div>
   Viewing 
-  1
    expense
+  s
    totalling 
   $100.00
 </div>
@@ -13,7 +13,6 @@ exports[`should match snapshot for std filters, 1 expense 1`] = `
 exports[`should match snapshot for std filters, expenses 1`] = `
 <div>
   Viewing 
-  3
    expense
   s
    totalling 

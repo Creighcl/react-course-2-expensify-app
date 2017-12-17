@@ -6,7 +6,7 @@ import numeral from 'numeral';
 
 export const ExpensesSummary = (props) => (
     <div>
-        Viewing { props.expenses.length } expense{ props.expenses.length === 1 ? '' : 's' } totalling { props.expenseTotal }    
+        Viewing { props.expensesCount } expense{ props.expensesCount === 1 ? '' : 's' } totalling { props.expenseTotal }    
     </div>
 );
 
@@ -14,7 +14,7 @@ const mapStateToProps = (state) => {
     const currentExpenses = selectExpenses(state.expenses, state.filters);
     const expenseTotal = numeral(expensesTotal(currentExpenses)/100).format('$0,0.00');
     return {
-        expenses: currentExpenses,
+        expensesCount: currentExpenses.length,
         expenseTotal
     };
 };
